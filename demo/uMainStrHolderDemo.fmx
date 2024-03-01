@@ -1,0 +1,377 @@
+object FMainStrHolderDemo: TFMainStrHolderDemo
+  Left = 0
+  Top = 0
+  Caption = 'StrHolder Demo'
+  ClientHeight = 480
+  ClientWidth = 693
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 693.000000000000000000
+    Size.Height = 408.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Layout2: TLayout
+      Align = Top
+      Size.Width = 693.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Button1: TButton
+        Position.X = 24.000000000000000000
+        Position.Y = 8.000000000000000000
+        TabOrder = 0
+        Text = 'Cuento'
+        OnClick = Button1Click
+      end
+      object Button2: TButton
+        Position.X = 132.000000000000000000
+        Position.Y = 8.000000000000000000
+        TabOrder = 1
+        Text = 'Html'
+        OnClick = Button2Click
+      end
+      object Button3: TButton
+        Position.X = 240.000000000000000000
+        Position.Y = 8.000000000000000000
+        TabOrder = 2
+        Text = 'Manual'
+        OnClick = Button3Click
+      end
+    end
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      StyledSettings = [Family, Style, FontColor]
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.WordWrap = True
+      Align = Client
+      Size.Width = 493.000000000000000000
+      Size.Height = 367.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Viewport.Width = 489.000000000000000000
+      Viewport.Height = 363.000000000000000000
+    end
+    object ListBox1: TListBox
+      Align = Left
+      Position.Y = 41.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 367.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 196.000000000000000000
+      Viewport.Height = 363.000000000000000000
+    end
+  end
+  object Layout3: TLayout
+    Align = Bottom
+    Position.Y = 408.000000000000000000
+    Size.Width = 693.000000000000000000
+    Size.Height = 72.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object EditIndice: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Position.X = 8.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label1: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 49.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Indice'
+      TabOrder = 2
+    end
+    object Label2: TLabel
+      Position.X = 153.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Texto'
+      TabOrder = 1
+    end
+    object EditTexto: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Position.X = 153.000000000000000000
+      Position.Y = 17.000000000000000000
+      Size.Width = 392.000000000000000000
+      Size.Height = 47.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Viewport.Width = 388.000000000000000000
+      Viewport.Height = 43.000000000000000000
+    end
+    object Button5: TButton
+      Position.X = 553.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Add Texto'
+      OnClick = Button5Click
+    end
+    object Button6: TButton
+      Position.X = 553.000000000000000000
+      Position.Y = 39.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Del Texto'
+      OnClick = Button6Click
+    end
+  end
+  object StrHolder1: TStrHolder
+    Items = <
+      item
+        Nombre = 'programador'
+        Strings.Strings = (
+          
+            'Hab'#237'a una vez un programador llamado Mart'#237'n. Mart'#237'n siempre hab'#237 +
+            'a sido apasionado por la programaci'#243'n, pero ten'#237'a un problema: s' +
+            'e frustraba mucho porque se demoraba una eternidad en completar ' +
+            'sus proyectos y, a menudo, no lograba entregar a tiempo.'
+          ''
+          
+            'Mart'#237'n trabajaba en una peque'#241'a empresa de desarrollo de softwar' +
+            'e, donde la presi'#243'n del tiempo era constante y las fechas l'#237'mite' +
+            ' parec'#237'an acercarse m'#225's r'#225'pido de lo que '#233'l pod'#237'a teclear. Pasab' +
+            'a largas noches frente a su computadora, intentando descifrar lo' +
+            's intricados c'#243'digos y resolver los persistentes errores que par' +
+            'ec'#237'an surgir en cada esquina de su camino.'
+          ''
+          
+            'Un d'#237'a, mientras navegaba por la web en busca de soluciones para' +
+            ' mejorar su eficiencia en la programaci'#243'n, Mart'#237'n se top'#243' con al' +
+            'go que le llam'#243' la atenci'#243'n: un lenguaje de programaci'#243'n llamado' +
+            ' Delphi. Ley'#243' sobre sus caracter'#237'sticas, su sintaxis limpia y su' +
+            ' entorno de desarrollo integrado (IDE) altamente eficiente.'
+          ''
+          
+            'Decidi'#243' darle una oportunidad y descarg'#243' Delphi en su computador' +
+            'a. Al principio, le llev'#243' tiempo adaptarse al nuevo entorno, per' +
+            'o pronto comenz'#243' a notar una gran diferencia. La forma en que De' +
+            'lphi organizaba el c'#243'digo y facilitaba la creaci'#243'n de interfaces' +
+            ' gr'#225'ficas era simplemente asombrosa. Mart'#237'n se sent'#237'a m'#225's produc' +
+            'tivo que nunca.'
+          ''
+          
+            'Con Delphi, Mart'#237'n pudo trabajar de manera m'#225's r'#225'pida y eficient' +
+            'e. Los componentes visuales predefinidos y la capacidad de arras' +
+            'trar y soltar simplificaron enormemente su flujo de trabajo. Ya ' +
+            'no perd'#237'a horas tratando de resolver problemas triviales, sino q' +
+            'ue pod'#237'a concentrarse en la l'#243'gica de su aplicaci'#243'n.'
+          ''
+          
+            'A medida que pasaban los d'#237'as, Mart'#237'n not'#243' que sus proyectos est' +
+            'aban avanzando m'#225's r'#225'pido de lo que nunca hab'#237'a imaginado. No so' +
+            'lo eso, sino que tambi'#233'n comenz'#243' a entregar sus proyectos antes ' +
+            'de lo previsto. Su jefe qued'#243' impresionado por su nueva eficienc' +
+            'ia y lo felicit'#243' por su mejora.'
+          ''
+          
+            'Desde entonces, Mart'#237'n se convirti'#243' en un ferviente defensor de ' +
+            'Delphi. No solo le hab'#237'a ayudado a superar su frustraci'#243'n y a cu' +
+            'mplir con los plazos, sino que tambi'#233'n hab'#237'a revitalizado su pas' +
+            'i'#243'n por la programaci'#243'n. Ahora, cada vez que se sentaba frente a' +
+            ' su computadora, sab'#237'a que ten'#237'a una herramienta poderosa a su d' +
+            'isposici'#243'n que lo ayudar'#237'a a alcanzar sus metas con facilidad y ' +
+            'rapidez. Y as'#237', Mart'#237'n continu'#243' escribiendo su historia de '#233'xito' +
+            ', l'#237'nea de c'#243'digo tras l'#237'nea de c'#243'digo, con Delphi a su lado.'
+          ''
+          
+            'A medida que Mart'#237'n continuaba explorando las capacidades de Del' +
+            'phi, descubri'#243' a'#250'n m'#225's formas de optimizar su flujo de trabajo. ' +
+            'Se sumergi'#243' en la vasta biblioteca de componentes y herramientas' +
+            ' que Delphi ofrec'#237'a, encontrando soluciones para desaf'#237'os que an' +
+            'tes le hab'#237'an parecido insuperables.'
+          ''
+          
+            'Con la confianza renovada, Mart'#237'n comenz'#243' a proponer ideas m'#225's a' +
+            'mbiciosas en su trabajo. Dise'#241#243' interfaces de usuario m'#225's intuit' +
+            'ivas, implement'#243' algoritmos m'#225's sofisticados y desarroll'#243' aplica' +
+            'ciones m'#225's robustas. Su creatividad floreci'#243' con la libertad que' +
+            ' le ofrec'#237'a Delphi.'
+          ''
+          
+            'Pero no todo fueron rosas. Hubo momentos de frustraci'#243'n y desaf'#237 +
+            'os t'#233'cnicos que Mart'#237'n tuvo que superar. Sin embargo, cada obst'#225 +
+            'culo se convirti'#243' en una oportunidad para aprender y crecer como' +
+            ' programador. Con la ayuda de la comunidad en l'#237'nea de Delphi, M' +
+            'art'#237'n encontr'#243' respuestas a sus preguntas y soluciones a sus pro' +
+            'blemas.'
+          ''
+          
+            'Con el tiempo, Mart'#237'n se convirti'#243' en uno de los programadores m' +
+            #225's respetados en su empresa. Su habilidad para entregar proyecto' +
+            's de alta calidad en tiempo r'#233'cord lo hizo destacar entre sus co' +
+            'legas. Incluso fue ascendido a un puesto de liderazgo, donde pud' +
+            'o compartir su experiencia y conocimientos con otros miembros de' +
+            'l equipo.'
+          ''
+          
+            'Pero lo m'#225's importante para Mart'#237'n fue redescubrir su pasi'#243'n por' +
+            ' la programaci'#243'n. Lo que una vez hab'#237'a sido una fuente de frustr' +
+            'aci'#243'n y estr'#233's, ahora se hab'#237'a convertido en una fuente de satis' +
+            'facci'#243'n y realizaci'#243'n. Y todo gracias a Delphi, el lenguaje que ' +
+            'hab'#237'a cambiado su vida como programador.')
+      end
+      item
+        Nombre = 'html'
+        Strings.Strings = (
+          '<!DOCTYPE html>'
+          '<html lang="en">'
+          '<head>'
+          '  <meta charset="UTF-8">'
+          
+            '  <meta name="viewport" content="width=device-width, initial-sca' +
+            'le=1.0">'
+          '  <title>Promoci'#243'n de Desarrollador Delphi Eficiente</title>'
+          '  <!-- Bootstrap CSS -->'
+          
+            '  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2' +
+            '/css/bootstrap.min.css" rel="stylesheet">'
+          '  <style>'
+          '    .developer-image {'
+          '      max-width: 100%;'
+          '      height: auto;'
+          '    }'
+          '  </style>'
+          '</head>'
+          '<body>'
+          '  <div class="container">'
+          '    <div class="row mt-5">'
+          '      <div class="col-md-6">'
+          
+            '        <img src="developer.jpg" alt="Desarrollador Delphi Efici' +
+            'ente" class="developer-image">'
+          '      </div>'
+          '      <div class="col-md-6">'
+          
+            '        <h1 class="display-4">'#161'Conoce a nuestro Desarrollador De' +
+            'lphi Eficiente!</h1>'
+          
+            '        <p class="lead">Mart'#237'n es un desarrollador de Delphi alt' +
+            'amente eficiente que puede llevar tus proyectos al siguiente niv' +
+            'el.</p>'
+          
+            '        <p>Con a'#241'os de experiencia en el desarrollo de software ' +
+            'y un dominio experto de Delphi, Mart'#237'n puede ayudarte a alcanzar' +
+            ' tus objetivos de manera r'#225'pida y eficiente.</p>'
+          
+            '        <p>Ya sea que necesites una aplicaci'#243'n de escritorio, un' +
+            'a aplicaci'#243'n m'#243'vil o una soluci'#243'n empresarial compleja, Mart'#237'n t' +
+            'iene las habilidades y el conocimiento necesarios para hacerlo r' +
+            'ealidad.</p>'
+          
+            '        <p>'#161'No pierdas m'#225's tiempo con desarrolladores que no cum' +
+            'plen con los plazos! Conf'#237'a en Mart'#237'n para entregar resultados d' +
+            'e calidad en tiempo r'#233'cord.</p>'
+          '        <a href="#" class="btn btn-primary">Cont'#225'ctanos</a>'
+          '      </div>'
+          '    </div>'
+          '  </div>'
+          ''
+          
+            '  <!-- Bootstrap JS (opcional, si deseas usar funcionalidades de' +
+            ' Bootstrap que requieran JavaScript) -->'
+          
+            '  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"' +
+            '></script>'
+          
+            '  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4' +
+            '/dist/umd/popper.min.js"></script>'
+          
+            '  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.' +
+            '2/js/bootstrap.min.js"></script>'
+          '</body>'
+          '</html>')
+      end
+      item
+        Nombre = 'pdf'
+        Strings.Strings = (
+          
+            '**Manual de Uso del PDF: Todo lo que Necesitas Saber para Sacar ' +
+            'el M'#225'ximo Provecho**'
+          ''
+          '**Introducci'#243'n:**'
+          
+            'El Manual de Uso del PDF es una gu'#237'a completa dise'#241'ada para ayud' +
+            'arte a comprender y aprovechar al m'#225'ximo el formato de documento' +
+            ' port'#225'til (PDF). Desde la creaci'#243'n hasta la edici'#243'n y la visuali' +
+            'zaci'#243'n, este manual te llevar'#225' paso a paso a trav'#233's de todas las' +
+            ' funciones y caracter'#237'sticas importantes del PDF.'
+          ''
+          '**Contenidos Destacados:**'
+          ''
+          '1. **Introducci'#243'n al PDF:**'
+          '   - '#191'Qu'#233' es un PDF?'
+          '   - Historia y evoluci'#243'n del formato PDF.'
+          '   - Ventajas y beneficios del uso del PDF.'
+          ''
+          '2. **Creaci'#243'n de PDF:**'
+          '   - M'#233'todos para crear documentos PDF.'
+          '   - Convertir otros formatos de archivo a PDF.'
+          
+            '   - Herramientas y software recomendados para la creaci'#243'n de PD' +
+            'F.'
+          ''
+          '3. **Edici'#243'n de PDF:**'
+          '   - Modificaci'#243'n de texto, im'#225'genes y gr'#225'ficos en un PDF.'
+          '   - Fusionar, dividir y reorganizar p'#225'ginas PDF.'
+          '   - A'#241'adir comentarios, marcadores y enlaces.'
+          ''
+          '4. **Visualizaci'#243'n y Navegaci'#243'n:**'
+          '   - Exploraci'#243'n de diferentes lectores de PDF.'
+          
+            '   - Funciones de navegaci'#243'n, como b'#250'squeda, zoom y desplazamien' +
+            'to.'
+          '   - Trabajar con m'#250'ltiples documentos y pesta'#241'as.'
+          ''
+          '5. **Seguridad y Protecci'#243'n:**'
+          
+            '   - M'#233'todos para proteger documentos PDF con contrase'#241'as y perm' +
+            'isos.'
+          '   - Firma digital y certificaci'#243'n de documentos PDF.'
+          '   - Gesti'#243'n de derechos de autor y confidencialidad.'
+          ''
+          '6. **Colaboraci'#243'n y Compartici'#243'n:**'
+          '   - Compartir documentos PDF de forma segura y eficiente.'
+          '   - Herramientas para revisi'#243'n y comentarios colaborativos.'
+          
+            '   - Integraci'#243'n con servicios en la nube y plataformas de colab' +
+            'oraci'#243'n.'
+          ''
+          '**Conclusiones:**'
+          
+            'El Manual de Uso del PDF te proporciona los conocimientos y habi' +
+            'lidades necesarios para trabajar de manera efectiva con document' +
+            'os PDF en todas tus actividades personales y profesionales. Ya s' +
+            'ea que necesites crear, editar, visualizar o compartir archivos ' +
+            'PDF, este manual te guiar'#225' en cada paso del camino, garantizando' +
+            ' una experiencia fluida y productiva con este popular formato de' +
+            ' documento.')
+      end>
+    Left = 544
+    Top = 80
+  end
+end
