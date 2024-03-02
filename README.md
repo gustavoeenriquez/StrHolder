@@ -29,7 +29,7 @@ end;
 
 En tiempo de ejecución también es posible modificar o eliminar textos, sin embargo solo es válido en tiempo de ejecución,  así que cuando se reinicie el formulario o datamodulo comenzará con la configuración que se creó en tiempo de diseño.
 
-Para adicionar en tiempo de ejecución un par Lave/Texto se utiliza la función AddString
+Para adicionar en tiempo de ejecución un par Llave/Texto se utiliza la función AddString
 
 ```pascal
 procedure TFMainStrHolderDemo.Button5Click(Sender: TObject);
@@ -39,7 +39,7 @@ begin
 end;
 ```
 
-Para modificar en tiempo de ejecución un par Lave/Texto se utiliza la función AddString
+Para modificar en tiempo de ejecución un par Llave/Texto se utiliza la función AddString
 
 ```pascal
 procedure TFMainStrHolderDemo.Button5Click(Sender: TObject);
@@ -49,7 +49,7 @@ begin
 end;
 ```
 
-Para eliminar en tiempo de ejecución un par Lave/Texto se utiliza la función DelString
+Para eliminar en tiempo de ejecución un par Llave/Texto se utiliza la función DelString
 
 ```pascal
 procedure TFMainStrHolderDemo.Button6Click(Sender: TObject);
